@@ -61,7 +61,7 @@
 			border-radius: 30px;
 			padding: 20px;
 			max-width: 700px;
-			margin: auto;
+			margin: 10px auto;
 		}
 		#mainInput {
 			width: 90%;
@@ -106,6 +106,12 @@
 		
 	</div>
 	
+	<div id="container">
+		<h2>Why this website?</h2>
+		<p>In their written f<span class='letter'>o</span>rm, the letter <span class='letter'>O</span> and the digit <span class='digit'>0</span> l<span class='letter'>o</span><span class='letter'>o</span>k alike. Usually it is n<span class='letter'>o</span>t a pr<span class='letter'>o</span>blem because with the c<span class='letter'>o</span>ntext, we understand which is which.</p>
+		<p>H<span class='letter'>o</span>wever, when the text has n<span class='letter'>o</span> sense in itself (f<span class='letter'>o</span>r example an identifier <span class='letter'>o</span>r a passw<span class='letter'>o</span>rd) and we have t<span class='letter'>o</span> dictate it t<span class='letter'>o</span> s<span class='letter'>o</span>me<span class='letter'>o</span>ne <span class='letter'>o</span>r to pass it fr<span class='letter'>o</span>m <span class='letter'>o</span>ne screen t<span class='letter'>o</span> an<span class='letter'>o</span>ther supp<span class='letter'>o</span>rt (paper, ph<span class='letter'>o</span>ne,...), it bec<span class='letter'>o</span>mes critical t<span class='letter'>o</span> understand which character is a letter <span class='letter'>O</span> and which is a digit <span class='digit'>0</span>.</p>
+	</div>
+
 	<p id="footer">Made by <a href="https://www.feelouttheform.net/" target="_blank">Nic<span class='letter'>o</span>las F<span class='letter'>o</span>rm</a> under the <a href="https://mit-license.org/" target="_blank">MIT license</a> (<a href="https://github.com/nicolasform/oorzero/" target="_blank">see s<span class='letter'>o</span>urce here</a>). This website d<span class='letter'>o</span>es n<span class='letter'>o</span>t put any tracker <span class='letter'>o</span>r c<span class='letter'>o</span><span class='letter'>o</span>kie in y<span class='letter'>o</span>ur br<span class='letter'>o</span>wser and d<span class='letter'>o</span>es n<span class='letter'>o</span>t c<span class='letter'>o</span>llect what y<span class='letter'>o</span>u put in the text b<span class='letter'>o</span>x.</p>
 	
 	<script>

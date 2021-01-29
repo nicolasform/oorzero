@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+<?php
+
+	// Count the visitors
+	
+	$host_name = '';
+	$database = '';
+	$user_name = '';
+	$password = '';
+
+	$dbConnection = new mysqli($host_name, $user_name, $password, $database)
+		or die('{ "error":"1", "message": "Impossible to connect : ' . $dbConnection->connect_error . '" }');
+
+	$stmt = $dbConnection->prepare("INSERT INTO `oorzero_visitors`(`date`) VALUES (CURRENT_TIMESTAMP)")
+		or die('Failed PREPARE request : ' . $dbConnection->error);
+	$stmt->execute()
+		or die('Failed EXECUTE request : ' . $stmt->error);
+	$stmt->close();
+	
+?><!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -90,7 +108,7 @@ SOFTWARE.
 		
 	</div>
 	
-	<p id="footer">Made by <a href="https://www.feelouttheform.net/" target="_blank">Nic<span class='letter'>o</span>las F<span class='letter'>o</span>rm</a> under the <a href="https://mit-license.org/" target="_blank">MIT license</a> (<a href="https://github.com/nicolasform/oorzero/" target="_blank">see s<span class='letter'>o</span>urce here</a>). This website d<span class='letter'>o</span>es n<span class='letter'>o</span>t use any trackers <span class='letter'>o</span>r c<span class='letter'>o</span><span class='letter'>o</span>kies and d<span class='letter'>o</span>es n<span class='letter'>o</span>t c<span class='letter'>o</span>llect what y<span class='letter'>o</span>u put in the text b<span class='letter'>o</span>x.</p>
+	<p id="footer">Made by <a href="https://www.feelouttheform.net/" target="_blank">Nic<span class='letter'>o</span>las F<span class='letter'>o</span>rm</a> under the <a href="https://mit-license.org/" target="_blank">MIT license</a> (<a href="https://github.com/nicolasform/oorzero/" target="_blank">see s<span class='letter'>o</span>urce here</a>). This website d<span class='letter'>o</span>es n<span class='letter'>o</span>t put any tracker <span class='letter'>o</span>r c<span class='letter'>o</span><span class='letter'>o</span>kie in y<span class='letter'>o</span>ur br<span class='letter'>o</span>wser and d<span class='letter'>o</span>es n<span class='letter'>o</span>t c<span class='letter'>o</span>llect what y<span class='letter'>o</span>u put in the text b<span class='letter'>o</span>x.</p>
 	
 	<script>
 				

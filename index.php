@@ -122,7 +122,7 @@
 		}
 		
 		function randomString() {
-			let characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ";  // Do not includes the letter O!!!
+			let characters = "ABCDEFGHIJKLMNPQRSTUVWXYZ";  // Should not include the letter O!!!
 			let str = "";
 			for (let i=0; i<10; i++) {
 				str += characters.charAt(Math.floor(Math.random() * characters.length));

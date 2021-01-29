@@ -100,7 +100,7 @@
 		
 		<div>
 			<p>Copy/paste your text below to know where are letters <span class='letter'>O</span> and digits <span class='digit'>0</span>.</p>
-			<p><textarea type="text" id="mainInput" onkeyup="checkLetters()"></textarea></p>
+			<p><textarea type="text" id="mainInput" onkeyup="checkLetters()" placeholder="Copy/paste your text here"></textarea></p>
 			<pre id="result"></pre>
 		</div>
 		

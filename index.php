@@ -80,7 +80,8 @@
 			color: #16c6bd;
 		}
 		.digit {
-			color: #ff7d7d;
+			color: #574a3c;
+			text-shadow: 1px 0 0 #ff7d7d, 1px 1px 0 #ff7d7d, 0 1px 0 #ff7d7d, -1px 1px 0 #ff7d7d, -1px 0 0 #ff7d7d, -1px -1px 0 #ff7d7d, 0 -1px 0 #ff7d7d, 1px -1px 0 #ff7d7d;
 		}
 		#footer {
 			color: #444444;
